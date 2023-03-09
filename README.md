@@ -31,7 +31,7 @@ source activate
 
 ### PyCharm에 가상환경 세팅하기
 
-![pycharm](/Users/zerovirus/Desktop/Code/scarping/pycharm.png)
+![pycharm](./pycharm.png)
 
 ### 파이썬 패키지 requirements 만드는 법
 
