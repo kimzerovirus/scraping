@@ -1,3 +1,5 @@
+
+
 # 파이썬 크롤러 만들기
 
 ## 파이썬 가상 환경 사용해 보기
@@ -50,3 +52,35 @@ $ pip install -r requirements.txt
 기본적으로 flask 는 `app.py` 를 찾아서 실행하므로 커스텀하고 싶다면 `set FLASK_APP=` 명령어를 사용하여 파일명을 바꿀 수 있음 
 
 개발모드 세팅 `set FLASK_DEBUG=true`
+
+
+
+## Scrapy
+
+### scrapy project 시작하기
+
+```bash
+scrapy startproject [project name]
+```
+
+> 프로젝트를 생성하면 파일 구조는 다음과 같다.
+
+```
+[project name]
+├── [project name]
+│    ├── spiders
+│		 │   └── __init__.py
+│    ├── items.py
+│    ├── middlewares.py
+│    ├── pipelines.py
+│    ├── settings.py
+│    └── __init__.py
+├── __init__.py
+└── scrapy.cfg
+```
+
+- `spiders` : 크롤링할 페이지를 정의하고 
+- `items.py` : 크롤링한 데이터를 db 등에 저장하는 기능을 하는 객체의 클래스를 정의하는 파일
+- `middlewares.py` : scrapy 에서 다른 모듈로 데이터를 송수신할 때 거치는 미들웨어
+- `pipelines.py` : item pipelines의 커스텀 모듈을 정의하는 파일
+- `scrapy.cfg` : 프로젝트의 전체적인 설정을 하는 파일
