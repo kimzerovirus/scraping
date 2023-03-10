@@ -69,7 +69,7 @@ scrapy startproject [project name]
 [project name]
 ├── [project name]
 │    ├── spiders
-│		 │   └── __init__.py
+│	 │   └── __init__.py
 │    ├── items.py
 │    ├── middlewares.py
 │    ├── pipelines.py
